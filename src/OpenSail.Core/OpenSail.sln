@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSail", "OpenSail\OpenSail.csproj", "{743C7000-97EB-46CA-AC51-2DBB5F2EDFF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{DF1BBC05-28ED-41FB-A88C-A6798061B284}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{743C7000-97EB-46CA-AC51-2DBB5F2EDFF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743C7000-97EB-46CA-AC51-2DBB5F2EDFF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743C7000-97EB-46CA-AC51-2DBB5F2EDFF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743C7000-97EB-46CA-AC51-2DBB5F2EDFF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1BBC05-28ED-41FB-A88C-A6798061B284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1BBC05-28ED-41FB-A88C-A6798061B284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1BBC05-28ED-41FB-A88C-A6798061B284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1BBC05-28ED-41FB-A88C-A6798061B284}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+{
+  "endpoints": [
+    {
+      "path": "/weatherforecast",
+      "method": "get",
+      "intent": "get_weatherforecast",
+      "description": "List all weather predictions for a specific day.",
+      "meaning": "The response is a JSON array with date, summary, and temperature in Celsius.",
+      "examples": [
+        "I wanna know how many degrees will be the weahter today.",
+        "Is today going to be cold?"
+      ]
+    }
+  ]
+}
