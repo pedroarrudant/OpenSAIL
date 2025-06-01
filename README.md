@@ -22,7 +22,7 @@
 
 ## 📦 Installation
 
-### 🔜 Via NuGet (coming soon)
+### ✅ Via NuGet
 
 ```bash
 dotnet add package OpenSAIL.Core
@@ -129,10 +129,9 @@ This enriched spec can be consumed by:
 - [x] Semantic enrichment for Swagger
 - [ ] JSON Schema validation for manifest
 - [ ] CLI: generate manifest from OpenAPI
-- [ ] NuGet publication
 - [ ] Integration example with LLM agent or prompt-router
 
 ---
 
-> Built with ❤️ and precision by [Pedro Arruda](https://github.com/your-username)  
+> Built with ❤️ and precision by [Pedro Arruda](https://github.com/pedroarrudant)  
 > Envisioned for the next generation of API–AI interoperability.

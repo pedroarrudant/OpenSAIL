@@ -3,20 +3,21 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using OpenSAIL.Core.Filters;
 using OpenSAIL.Core.Loaders;
 
-namespace OpenSAIL.Core.Extensions;
-
-public static class OpenApiAiExtensions
+namespace OpenSAIL.Core.Extensions
 {
-    public static IServiceCollection AddAiExtensions(this IServiceCollection services, string manifestPath = "sail.manifest.json")
+    public static class OpenApiAiExtensions
     {
-        var manifest = SailManifestLoader.Load(manifestPath);
-        services.AddSingleton(manifest);
-
-        services.Configure<SwaggerGenOptions>(options =>
+        public static IServiceCollection AddAiExtensions(this IServiceCollection services, string manifestPath = "sail.manifest.json")
         {
-            options.OperationFilter<InjectAiMetadataFromManifest>();
-        });
+            var manifest = SailManifestLoader.Load(manifestPath);
+            services.AddSingleton(manifest);
 
-        return services;
+            services.Configure<SwaggerGenOptions>(options =>
+            {
+                options.OperationFilter<InjectAiMetadataFromManifest>();
+            });
+
+            return services;
+        }
     }
 }

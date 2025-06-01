@@ -404,3 +404,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.sln.dotSettings.user
