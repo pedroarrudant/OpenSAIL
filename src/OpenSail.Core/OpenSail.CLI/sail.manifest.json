@@ -1,0 +1,38 @@
+{
+    "endpoints": [
+      {
+        "path": "/weatherforecast",
+        "method": "get",
+        "intent": "get_weatherforecast",
+        "description": "List all weather predictions for a specific day.",
+        "meaning": "The response is a JSON array containing date, summary, and temperature in Celsius.",
+        "examples": [
+          "What is the weather like today?",
+          "Is it going to be cold tomorrow?",
+          "Show me the forecast for this week."
+        ]
+      },
+      {
+        "path": "/users/{id}",
+        "method": "get",
+        "intent": "get_user_by_id",
+        "description": "Retrieve detailed user information by ID.",
+        "meaning": "Returns a user object with name, email, and registration date.",
+        "examples": [
+          "Get user details for ID 123.",
+          "Show information about user 456."
+        ]
+      },
+      {
+        "path": "/orders",
+        "method": "post",
+        "intent": "create_order",
+        "description": "Create a new order from the provided cart data.",
+        "meaning": "Responds with the created order including ID, status, and total price.",
+        "examples": [
+          "Place a new order with items in the cart.",
+          "I want to checkout and finalize my purchase."
+        ]
+      }
+    ]
+  }
