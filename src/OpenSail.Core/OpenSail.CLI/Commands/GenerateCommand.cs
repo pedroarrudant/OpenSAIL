@@ -1,5 +1,6 @@
 using System.CommandLine;
 using OpenSAIL.Cli.Services;
+using OpenSAIL.Cli.Models;
 
 namespace OpenSAIL.Cli.Commands;
 
@@ -9,10 +10,9 @@ public static class GenerateCommand
     {
         var command = new Command("generate", "Generate sail.manifest.json from your API project");
 
-        var projectOption = new Option<FileInfo>(
-                name: "--project",
-                description: "Path to the .csproj file")
-            { IsRequired = true };
+        var projectOption = new Option<FileInfo?>(
+            name: "--project",
+            description: "Optional path to the .csproj file (uses scanner if provided)");
 
         var outputOption = new Option<FileInfo>(
             name: "--output",
@@ -22,10 +22,27 @@ public static class GenerateCommand
         command.AddOption(projectOption);
         command.AddOption(outputOption);
 
-        command.SetHandler((FileInfo project, FileInfo output) =>
+        command.SetHandler((FileInfo? project, FileInfo output) =>
         {
+            var manifest = new SailManifest();
+
+            if (project is not null)
+            {
+                var scanner = new EndpointScanner();
+                var endpoints = scanner.Scan(project.FullName);
+                manifest.Endpoints = endpoints;
+                Console.WriteLine($"✔️  Manifest generated from project: {project.Name}");
+            }
+            else
+            {
+                // fallback: mantém vazio ou faz outro processo, se desejar
+                Console.WriteLine("⚠️  No project provided. Manifest will be empty.");
+            }
+
             var generator = new ManifestGenerator();
-            generator.Generate(project, output);
+            generator.Generate(manifest, output);
+            Console.WriteLine($"📄 Manifest written to {output.FullName}");
+
         }, projectOption, outputOption);
 
         return command;
