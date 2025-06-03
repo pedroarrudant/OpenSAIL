@@ -1,4 +1,4 @@
-﻿using System.CommandLine;
+using System.CommandLine;
 using OpenSAIL.Cli.Commands;
 
 var rootCommand = new RootCommand("OpenSAIL CLI - Semantic API Intent Layer");
