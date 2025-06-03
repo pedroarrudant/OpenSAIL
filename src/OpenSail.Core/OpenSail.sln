@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSail", "OpenSail\OpenSa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSail.CLI", "OpenSail.CLI\OpenSail.CLI.csproj", "{B8D4F888-C0DD-4E5B-8872-F97DFBA8EA17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSail.Tests", "OpenSail.Tests\OpenSail.Tests.csproj", "{4DF634BD-3EF0-43CC-826E-A6359E9266A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{B8D4F888-C0DD-4E5B-8872-F97DFBA8EA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B8D4F888-C0DD-4E5B-8872-F97DFBA8EA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8D4F888-C0DD-4E5B-8872-F97DFBA8EA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8D4F888-C0DD-4E5B-8872-F97DFBA8EA17}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
+                {B8D4F888-C0DD-4E5B-8872-F97DFBA8EA17}.Release|Any CPU.Build.0 = Release|Any CPU
+                {4DF634BD-3EF0-43CC-826E-A6359E9266A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+                {4DF634BD-3EF0-43CC-826E-A6359E9266A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+                {4DF634BD-3EF0-43CC-826E-A6359E9266A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+                {4DF634BD-3EF0-43CC-826E-A6359E9266A8}.Release|Any CPU.Build.0 = Release|Any CPU
+        EndGlobalSection
 EndGlobal
